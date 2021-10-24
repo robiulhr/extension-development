@@ -53,6 +53,8 @@
     submit.addEventListener("click", () => {
         previewFile()
         showPhoto()
+        location.reload();
+
     })
     window.addEventListener("DOMContentLoaded", () => {
         showPhoto()

@@ -8,6 +8,11 @@
     <!-- -----------------------------------------  css --------------------------------- -->
     <!-- ----------------------------------------- fontawesome ------------------------------------------- -->
     <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <!-- -------------------------------------------Search-different-engine option div ----------------------------------- -->
+    <link rel="stylesheet" href="./Avatar/SearchDefferentEngine/selectSearchEngine.css">
+
+    <!-- -------------------------------------------Search-different-engine div ----------------------------------- -->
+    <link rel="stylesheet" href="./Avatar/SearchDefferentEngine/searchbar.css">
     <!-- ------------------------------------------- settings div ----------------------------------- -->
     <link rel="stylesheet" href="./settingsdiv/settingsButton.css">
     <link rel="stylesheet" href="./settingsdiv/settingsModal.css">
@@ -35,14 +40,12 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="clock-options" id="option-1" title="Clock">
-                        <div class="option" id="text-color-feild" customize-theme="theme-div"
-                            customize-text="text-color-feild">
+                        <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
                             <i class="fas fa-clock"></i>
                         </div>
                     </div>
                     <div class="clock-options" id="option-2" title="Stop Watch">
-                        <div class="option" id="text-color-feild" customize-theme="theme-div"
-                            customize-text="text-color-feild">
+                        <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
                             <i class="fas fa-stopwatch-20"></i>
                         </div>
                     </div>
@@ -97,6 +100,47 @@
             <div class="Name-container">
                 <div>
                     <h2 customize-text="text-color-feild" class="Name-feild">Robiul Hasan</h2>
+                </div>
+            </div>
+            <div class="Search-different-engine-container">
+                <div class="Search-different-engine">
+                    <div class="search ">
+                        <div class="select-search-Engine">
+                            <div class="select-search-Engine-container">
+                                <div class="select-search-Engine-box" customize-theme="theme-div"
+                                    customize-text="text-color-feild">
+                                    <i class="">Select</i>
+                                </div>
+                                <div class="search-Engine-options" id="option-1" title="Clock">
+                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
+                                        <i class="">Google</i>
+                                    </div>
+                                </div>
+                                <div class="search-Engine-options" id="option-2" title="Stop Watch">
+                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
+                                        <i class="">Bing</i>
+                                    </div>
+                                </div>
+                                <div class="search-Engine-options" id="option-2" title="Stop Watch">
+                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
+                                        <i class="">Duck Duck Go</i>
+                                    </div>
+                                </div>
+                                <div class="search-Engine-options" id="option-2" title="Stop Watch">
+                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
+                                        <i class="">Start Page</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                            customize-theme="theme-div" customize-text="text-color-feild">
+                        <button type="submit" class="searchButton" customize-theme="theme-div"
+                            customize-text="text-color-feild">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,8 +215,11 @@
     </main>
     <!-- ------------------- script ------------------------- -->
     <script src="../fontawesome/all.min.js"></script>
-    <!-- ------------------------ setting script  -------------------------------- -->
-    <!-- ------------------------ photo Upload script  -------------------------------- -->
+    <!-- ------------------------Search-different-engine option script  -------------------------------- -->
+    <script src="./Avatar/SearchDefferentEngine/selectSearchEngine.js"></script>
+    <!-- ------------------------Search-different-engine script  -------------------------------- -->
+    <script src="./Avatar/Avatar.js"></script>
+    <!-- ------------------------ setting  and photo Upload script  -------------------------------- -->
     <script src="./settingsdiv/photoUpload.js"></script>
     <script src="./settingsdiv/settingdiv.js"></script>
     <!-- ------------------------ Weather app script  -------------------------------- -->

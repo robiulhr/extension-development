@@ -101,6 +101,8 @@
         setCustomDesign(GetUserDatalocalstrg)
         // -------------close modal-------------------
         closeModal()
+        location.reload();
+
     })
     // ----------------------------------- showing the stored background after page rejresh------------------------------
     window.addEventListener("DOMContentLoaded", () => {

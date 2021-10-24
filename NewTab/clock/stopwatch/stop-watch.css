@@ -8,7 +8,7 @@ align-items: center;
 }
 .stop-watch h1{
     margin-bottom: 10px;
-    text-shadow: 0 0 20px rgb(10 175 230),
+    text-shadow: 0 0 20px rgb(10 75 130),
     0 0 20px rgb(10 175 230 / 0%);
     color: #daf6ff;
 }
@@ -19,9 +19,10 @@ color: #daf6ff;
 }
 .stop-watch-button{
     margin: 10px 0;
+
 }
 .stop-watch-button button{
-    padding: 2px;
+    padding: 5px;
     border: 1px solid #daf6ff;
     border-radius: 4px;
     margin: 2px;
