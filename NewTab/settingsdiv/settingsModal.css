@@ -1,0 +1,43 @@
+.settings-modal-container{
+    position: absolute;
+    top: 50vh;
+    left: 37vw;
+    background-color: aqua;
+    padding: 50px;
+    transition: all .4s ease-in-out;
+}
+.settings-modal{
+    position: relative;
+}
+.cross-settings-modal{
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    width: max-content;
+}
+.settings-modal-form{
+
+}
+#settings-modal-form div{
+    display: flex;
+    margin: 25px;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+#settings-modal-form  label{
+    margin-right: 20px;
+}
+#settings-modal-form input{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+#settings-modal-form input[type=file] {
+    margin-left: 50px;
+}
+
+.submit-div{
+    justify-content: center !important;
+
+}

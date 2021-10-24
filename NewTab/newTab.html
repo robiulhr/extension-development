@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -----------------------------------------  css --------------------------------- -->
+    <!-- ----------------------------------------- fontawesome ------------------------------------------- -->
+    <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <!-- ------------------------------------------- settings div ----------------------------------- -->
+    <link rel="stylesheet" href="./settingsdiv/settingsButton.css">
+    <link rel="stylesheet" href="./settingsdiv/settingsModal.css">
+    <!-- ------------------------ Weather app css -------------------------------- -->
+    <link rel="stylesheet" href="./weatherDiv/weatherDiv.css">
+    <!-- ----------------- avatar css ---------------- -->
+    <link rel="stylesheet" href="./Avatar/Avatar.css">
+    <!-- ----------------- clock css ---------------- -->
+    <link rel="stylesheet" href="./clock/cowndown-clock/coundown.css">
+    <link rel="stylesheet" href="./clock/stopwatch/stop-watch.css">
+    <link rel="stylesheet" href="./clock/select_clock.css">
+    <link rel="stylesheet" href="./clock/normal-clock/clock.css">
+    <!-- --------------------------------------- newTab css --------------------------------- -->
+    <link rel="stylesheet" href="./newTab.css">
+    <title>All in One</title>
+</head>
+
+<body style="background-image: url(../image/logo.png);">
+    <main class="main-section">
+        <div class="all-clock-div">
+            <!-- ---------------------------------------------------------------select clock ----------------------------------------------------------------- -->
+            <div class="select-clock">
+                <div class="clock-select-box-container">
+                    <div class="clock-select-box" id="" customize-theme="theme-div" customize-text="text-color-feild">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="clock-options" id="option-1" title="Clock">
+                        <div class="option" id="text-color-feild" customize-theme="theme-div"
+                            customize-text="text-color-feild">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="clock-options" id="option-2" title="Stop Watch">
+                        <div class="option" id="text-color-feild" customize-theme="theme-div"
+                            customize-text="text-color-feild">
+                            <i class="fas fa-stopwatch-20"></i>
+                        </div>
+                    </div>
+                    <!-- <div class="clock-options" id="option-3">
+                        <div class="option">
+                            <i class="fas fa-hourglass-start"></i>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+            <!-- -------------------------------------------------------------------------- clock --------------------------------------------------------------- -->
+            <div class="clock-container clock-items" id="option-1">
+                <div id="clock" class="clock">
+                    <p class="time" id="time" customize-text="text-color-feild">{{ time }}</p>
+                    <p class="date" id="date" customize-text="text-color-feild">{{ date }}</p>
+                </div>
+            </div>
+            <!-- -------------------------------------------------------------------------- stop watch --------------------------------------------------------------- -->
+
+            <div class="stop-watch-container clock-items" id="option-2" style="display: none;">
+                <div class="stop-watch">
+                    <h1 customize-text="text-color-feild">Stopwatch</h1>
+                    <p id="text-color-feild"><span id="menute">00</span>:<span id="seconds">00</span>:<span
+                            id="tens">00</span></p>
+                    <div class="stop-watch-button">
+                        <button id="button-start" customize-theme="theme-div"
+                            customize-text="text-color-feild">Start</button>
+                        <button id="button-stop" customize-theme="theme-div"
+                            customize-text="text-color-feild">Stop</button>
+                        <button id="button-reset" customize-theme="theme-div"
+                            customize-text="text-color-feild">Reset</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- -------------------------------------------------------------------------- cowndown timer --------------------------------------------------------------- -->
+
+            <!-- <div class="coundown-container clock-items" id="option-3" style="display: none;">
+                <div class="coundown">
+
+                </div>
+            </div> -->
+        </div>
+        <div class="avatar-div">
+            <div class="Avatar-Container">
+                <div class="profile-div">
+                    <img src="../image/avatar/img01.jpg" alt="">
+                </div>
+            </div>
+            <div class="Name-container">
+                <div>
+                    <h2 customize-text="text-color-feild" class="Name-feild">Robiul Hasan</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wether-div">
+        </div>
+        <div class="search-and-bookmark">
+        </div>
+        <div class="todo-list-div">
+        </div>
+        <div class="site-statistic-div">
+        </div>
+        <div class="sittings-div">
+
+            <div class="button2 setting-button" customize-theme="theme-div" customize-text="text-color-feild">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Settings
+            </div>
+            <div class="settings-modal-container" customize-theme="theme-div">
+                <div class="settings-modal">
+                    <div class="cross-settings-modal" customize-text="text-color-feild">
+                        <i class="fas fa-times" style="font-size: 20px;"></i>
+                    </div>
+                    <form action="" id="settings-modal-form">
+                        <div class="name-input-div">
+                            <label for="name" customize-text="text-color-feild">Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="bgcolor-input-div">
+                            <label for="bgColor" customize-text="text-color-feild">Background color</label>
+                            <input type="" id="bgColor">
+                        </div>
+                        <div class="textColor-input-div">
+                            <label for="textColor" customize-text="text-color-feild">Text color</label>
+                            <input type="" id="textColor">
+                        </div>
+                        <div class="theme-color-input">
+                            <label for="theme-color" customize-text="text-color-feild">Theme Color</label>
+                            <input type="text" id="theme-color">
+                        </div>
+                        <div class="profile-input-div">
+                            <label for="profile" customize-text="text-color-feild">Profile</label>
+                            <input type="file" id="profile">
+                        </div>
+                        <div class="Cover-photo-input-div">
+                            <label for="Cover-photo" customize-text="text-color-feild">Cover Photo</label>
+                            <input type="file" id="Cover-photo">
+                        </div>
+
+                        <div class="submit-div">
+                            <div class="button2 submit " customize-theme="theme-div" customize-text="text-color-feild">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Submit
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="quote-div">
+        </div>
+        <div class="block-list-div">
+        </div>
+    </main>
+    <!-- ------------------- script ------------------------- -->
+    <script src="../fontawesome/all.min.js"></script>
+    <!-- ------------------------ setting script  -------------------------------- -->
+    <!-- ------------------------ photo Upload script  -------------------------------- -->
+    <script src="./settingsdiv/photoUpload.js"></script>
+    <script src="./settingsdiv/settingdiv.js"></script>
+    <!-- ------------------------ Weather app script  -------------------------------- -->
+    <script src="./weatherDiv/weatherDiv.js"></script>
+    <!-- ------------------------ avatar script  -------------------------------- -->
+    <script src="./Avatar/Avatar.js"></script>
+    <!-- ------------------------ clock script  -------------------------------- -->
+    <script src="./clock/stopwatch/stopWatch.js"></script>
+    <script src="./clock/select_option.js"></script>
+    <script src="./clock/normal-clock/clock.js"></script>
+    <!-- ------------------------ newtab script  -------------------------------- -->
+
+    <script src="./newtab.js"></script>
+</body>
+
+</html>

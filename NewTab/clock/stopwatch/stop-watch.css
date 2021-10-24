@@ -1,0 +1,32 @@
+.stop-watch-container{
+    padding: 20px;
+}
+.stop-watch{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.stop-watch h1{
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgb(10 175 230),
+    0 0 20px rgb(10 175 230 / 0%);
+    color: #daf6ff;
+}
+.stop-watch p{
+text-shadow: 0 0 20px rgb(48 147 180 / 86%),
+0 0 20px rgb(10 175 230 / 0%);
+color: #daf6ff;
+}
+.stop-watch-button{
+    margin: 10px 0;
+}
+.stop-watch-button button{
+    padding: 2px;
+    border: 1px solid #daf6ff;
+    border-radius: 4px;
+    margin: 2px;
+    color: #daf6ff;
+background-color: transparent;
+ box-shadow: 0 0 20px rgb(76 144 166 / 44%),
+ 0 0 20px rgb(10 175 230 / 0%);
+}

@@ -1,0 +1,57 @@
+
+.select-clock{
+    padding: 30px 20px;
+}
+.clock-select-box{
+    padding: 12px 15px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+.clock-select-box:hover{
+    background-color: rgba(240, 248, 255, 0.808);
+
+}
+.fa-plus {
+font-size: 16px;
+transition: all .4s ease-in-out;
+}
+.clock-options{
+    font-size: 17px;
+    border-radius: 50%;
+    margin-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition:all .4s ease-in-out;
+}
+.clock-options .option{
+    padding: 10PX 12px 12px 14px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+
+}
+.clock-options:hover .option{
+    background-color: rgba(218, 165, 32, 0.767);
+
+}
+.clock-select-box-container:hover  .clock-options {
+    opacity: 1;
+    visibility: visible;
+}
+
+.clock-select-box:hover .fa-plus {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+.clock-options#option-2 {
+    transition-delay: .1s;
+}
+.clock-options#option-2 {
+    transition-delay: .2s;
+}
+.clock-options#option-3 {
+    transition-delay: .3s;
+}
