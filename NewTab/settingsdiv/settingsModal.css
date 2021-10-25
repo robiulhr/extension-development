@@ -1,43 +1,124 @@
-.settings-modal-container{
+ .settings-modal-container{
     position: absolute;
     top: 50vh;
-    left: 37vw;
-    background-color: aqua;
+    z-index: 10;
+    width: 800px;
+    left: 27vw;
+    /* background-color: aqua; */
+      background: #053777;
+      color: #fff;
+      font-size: 16px;
+      overflow: hidden;
+      background: -moz-linear-gradient(top, #053777 0%, #00659b 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #053777), color-stop(100%, #00659b));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #053777 0%, #00659b 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #053777 0%, #00659b 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #053777 0%, #00659b 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #053777 0%, #00659b 100%);
     padding: 50px;
     transition: all .4s ease-in-out;
 }
-.settings-modal{
-    position: relative;
-}
+
 .cross-settings-modal{
     position: absolute;
-    right: -10px;
-    top: -50px;
+    right: 20px;
+    top: 20px;
     width: max-content;
 }
-.settings-modal-form{
 
-}
-#settings-modal-form div{
-    display: flex;
-    margin: 25px;   
-    justify-content: space-between;
-    align-items: center;
-}
 
-#settings-modal-form  label{
-    margin-right: 20px;
-}
-#settings-modal-form input{
-    padding: 5px;
-    outline: none;
-    border-radius: 5px;
-}
-#settings-modal-form input[type=file] {
-    margin-left: 50px;
+
+
+/* ------------------------------------------------------------- */
+/* ===================== FILE INPUT ===================== */
+.file-area {
+    width: 100%;
+    position: relative;
 }
 
-.submit-div{
-    justify-content: center !important;
+.file-area input[type=file] {
+    position: absolute;
+    width: 100%; 
+     height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
 
+.file-area .file-dummy {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.file-area .file-dummy .success {
+    display: none;
+}
+.file-area:hover .file-dummy {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===================== BASIC STYLING ===================== */
+
+label {
+    font-weight: 500;
+    display: block;
+    margin: 4px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+label span {
+    float: right;
+    text-transform: none;
+    font-weight: 200;
+    line-height: 1em;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.form-controll {
+    display: block;
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-weight: 200;
+}
+
+.form-controll:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.submit-div .form-group button {
+    padding: 8px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #053777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    border: 0;
+    text-shadow: 0 1px 2px #fff;
+    cursor: pointer;
+}
+
+.form-group {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
 }

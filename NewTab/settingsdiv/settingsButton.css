@@ -1,9 +1,14 @@
 .sittings-div {
+    height: 100%;
+    width: 100%;
     display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 .button2 {
-    position: relative;
-    top: 60%;
+    position: absolute;
+    bottom: 0;
     left: 0;
     display: inline-block;
     padding: 10px 10px 10px 5px;
@@ -12,11 +17,10 @@
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
-    margin: 25px;
-    font-family: "Roboto", sans-serif;
-    filter: hue-rotate(0deg);
+    margin: 30px 25px;
     border: 2px solid #d2bdff;
     transition: all 0.1s linear;
+    -webkit-transition:all 0.1s linear;
     max-height: 35px;
     max-width: 100px;
 }

@@ -32,186 +32,234 @@
 
 <body style="background-image: url(../image/logo.png);">
     <main class="main-section">
-        <div class="all-clock-div">
-            <!-- ---------------------------------------------------------------select clock ----------------------------------------------------------------- -->
-            <div class="select-clock">
-                <div class="clock-select-box-container">
-                    <div class="clock-select-box" id="" customize-theme="theme-div" customize-text="text-color-feild">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="clock-options" id="option-1" title="Clock">
-                        <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="clock-options" id="option-2" title="Stop Watch">
-                        <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
-                            <i class="fas fa-stopwatch-20"></i>
-                        </div>
-                    </div>
-                    <!-- <div class="clock-options" id="option-3">
+        <div class="left-section">
+            <div class="left-top-section">
+                <div class="all-clock-div">
+                    <!-- ---------------------------------------------------------------select clock ----------------------------------------------------------------- -->
+                    <div class="select-clock">
+                        <div class="clock-select-box-container">
+                            <div class="clock-select-box" id="" customize-theme="theme-div"
+                                customize-text="text-color-feild">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="clock-options" id="option-1" title="Clock">
+                                <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="clock-options" id="option-2" title="Stop Watch">
+                                <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
+                                    <i class="fas fa-stopwatch-20"></i>
+                                </div>
+                            </div>
+                            <!-- <div class="clock-options" id="option-3">
                         <div class="option">
                             <i class="fas fa-hourglass-start"></i>
                         </div>
                     </div> -->
-                </div>
-
-            </div>
-            <!-- -------------------------------------------------------------------------- clock --------------------------------------------------------------- -->
-            <div class="clock-container clock-items" id="option-1">
-                <div id="clock" class="clock">
-                    <p class="time" id="time" customize-text="text-color-feild">{{ time }}</p>
-                    <p class="date" id="date" customize-text="text-color-feild">{{ date }}</p>
-                </div>
-            </div>
-            <!-- -------------------------------------------------------------------------- stop watch --------------------------------------------------------------- -->
-
-            <div class="stop-watch-container clock-items" id="option-2" style="display: none;">
-                <div class="stop-watch">
-                    <h1 customize-text="text-color-feild">Stopwatch</h1>
-                    <p id="text-color-feild"><span id="menute">00</span>:<span id="seconds">00</span>:<span
-                            id="tens">00</span></p>
-                    <div class="stop-watch-button">
-                        <button id="button-start" customize-theme="theme-div"
-                            customize-text="text-color-feild">Start</button>
-                        <button id="button-stop" customize-theme="theme-div"
-                            customize-text="text-color-feild">Stop</button>
-                        <button id="button-reset" customize-theme="theme-div"
-                            customize-text="text-color-feild">Reset</button>
+                        </div>
 
                     </div>
+                    <!-- -------------------------------------------------------------------------- clock --------------------------------------------------------------- -->
+                    <div class="clock-container clock-items" id="option-1">
+                        <div id="clock" class="clock">
+                            <p class="time" id="time" customize-text="text-color-feild"></p>
+                            <p class="date" id="date" customize-text="text-color-feild"></p>
+                        </div>
+                    </div>
+                    <!-- -------------------------------------------------------------------------- stop watch --------------------------------------------------------------- -->
 
-                </div>
-            </div>
-            <!-- -------------------------------------------------------------------------- cowndown timer --------------------------------------------------------------- -->
+                    <div class="stop-watch-container clock-items" id="option-2" style="display: none;">
+                        <div class="stop-watch">
+                            <h1 customize-text="text-color-feild">Stopwatch</h1>
+                            <p customize-text="text-color-feild"><span id="menute">00</span>:<span
+                                    id="seconds">00</span>:<span id="tens">00</span>
+                            </p>
+                            <div class="stop-watch-button">
+                                <button id="button-start" customize-theme="theme-div"
+                                    customize-text="text-color-feild">Start</button>
+                                <button id="button-stop" customize-theme="theme-div"
+                                    customize-text="text-color-feild">Stop</button>
+                                <button id="button-reset" customize-theme="theme-div"
+                                    customize-text="text-color-feild">Reset</button>
 
-            <!-- <div class="coundown-container clock-items" id="option-3" style="display: none;">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- -------------------------------------------------------------------------- cowndown timer --------------------------------------------------------------- -->
+
+                    <!-- <div class="coundown-container clock-items" id="option-3" style="display: none;">
                 <div class="coundown">
 
                 </div>
             </div> -->
+                </div>
+            </div>
+            <div class="left-middle-section">
+                <div class="search-and-bookmark">
+                </div>
+            </div>
+            <div class="left-bottom-section">
+                <div class="sittings-div">
+
+                    <div class="button2 setting-button" customize-theme="theme-div" customize-text="text-color-feild">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Settings
+                    </div>
+                    <div class="settings-modal-container">
+                        <div class="settings-modal">
+                            <div class="cross-settings-modal">
+                                <i class="fas fa-times" style="font-size: 20px;"></i>
+                            </div>
+                            <!-- ---------------------------------------------------------------------------- -->
+                            <form action="" id="settings-modal-form" method=post>
+                                <div class="form-group">
+                                    <label for="name">Name <span>You can Enter Your
+                                            Full
+                                            Name</span></label>
+                                    <input type="text" name="name" id="name" class="form-controll" autocomplete="off" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bgColor">Background
+                                        Colour<span>Enter any colour value or name</span></label>
+                                    <input type="text" name="bgColor" id="bgColor" class="form-controll"
+                                        autocomplete="off" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="textColor">Text color<span>Enter any
+                                            colour value or name</span> </label>
+                                    <input type="" id="textColor" name="textColor" class="form-controll"
+                                        autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="theme-color">Theme Color<span>Enter
+                                            any
+                                            colour value or name</span></label>
+                                    <input type="text" id="theme-color" name="textColor" class="form-controll"
+                                        autocomplete="off">
+                                </div>
+                                <div class="form-group file-area">
+                                    <label for="profile">Profile Pic<span>Please
+                                            Choose a image
+                                            at least 400x300
+                                            wide and under 2mb size</span></label>
+                                    <input type="file" name="profile" id="profile" />
+                                    <div class="file-dummy" id="profile-file-demo">
+                                        <div class="success" id="profile-demo-success">Great, your files is selected.
+                                            Keep on.</div>
+                                        <div class="default" id="profile-demo-default">Please select a files</div>
+                                    </div>
+                                </div>
+                                <div class="form-group file-area">
+                                    <label for="Cover-photo">Cover Photo<span>Please
+                                            Choose a image
+                                            at least 400x300
+                                            wide and under 2mb size</span></label>
+                                    <input type="file" name="Cover-photo" id="Cover-photo" />
+                                    <div class="file-dummy" id="cover-file-demo">
+                                        <div class="success" id="Cover-demo-success">Great, your files is selected.
+                                            Keep on.</div>
+                                        <div class="default" id="Cover-demo-default">Please select a files</div>
+                                    </div>
+                                </div>
+                                <div class="submit-div">
+                                    <div class="form-group">
+                                        <button class="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
         </div>
-        <div class="avatar-div">
-            <div class="Avatar-Container">
-                <div class="profile-div">
-                    <img src="../image/avatar/img01.jpg" alt="">
-                </div>
-            </div>
-            <div class="Name-container">
-                <div>
-                    <h2 customize-text="text-color-feild" class="Name-feild">Robiul Hasan</h2>
-                </div>
-            </div>
-            <div class="Search-different-engine-container">
-                <div class="Search-different-engine">
-                    <div class="search ">
-                        <div class="select-search-Engine">
-                            <div class="select-search-Engine-container">
-                                <div class="select-search-Engine-box" customize-theme="theme-div"
+        <div class="middle-section">
+            <div class="middle-top-section">
+                <div class="avatar-div">
+                    <div class="Avatar-Container">
+                        <div class="profile-div">
+                            <img src="../image/avatar/img01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="Name-container">
+                        <div>
+                            <h2 customize-text="text-color-feild" class="Name-feild">Robiul Hasan</h2>
+                        </div>
+                    </div>
+                    <div class="Search-different-engine-container">
+                        <div class="Search-different-engine">
+                            <div class="search ">
+                                <div class="select-search-Engine">
+                                    <div class="select-search-Engine-container">
+                                        <div class="select-search-Engine-box" customize-theme="theme-div"
+                                            customize-text="text-color-feild">
+                                            <i class="">Select</i>
+                                        </div>
+                                        <div class="search-Engine-options" id="search-Engine-1" title="Google"
+                                            customize-theme="theme-div" customize-text="text-color-feild">
+                                            <i class="">Google</i>
+                                        </div>
+                                        <div class="search-Engine-options" id="search-Engine-2" title="Bing"
+                                            customize-theme="theme-div" customize-text="text-color-feild">
+                                            <i class="">Bing</i>
+                                        </div>
+                                        <div class="search-Engine-options" id="search-Engine-3" title="Duck Duck Go"
+                                            customize-theme="theme-div" customize-text="text-color-feild">
+                                            <i class="">Duck Duck Go</i>
+                                        </div>
+                                        <div class="search-Engine-options" id="search-Engine-4"
+                                            customize-theme="theme-div" customize-text="text-color-feild"
+                                            title="Start Page">
+                                            <i class="">Start Page</i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                                    customize-theme="theme-div" customize-text="text-color-feild">
+                                <button type="submit" class="searchButton" customize-theme="theme-div"
                                     customize-text="text-color-feild">
-                                    <i class="">Select</i>
-                                </div>
-                                <div class="search-Engine-options" id="option-1" title="Clock">
-                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
-                                        <i class="">Google</i>
-                                    </div>
-                                </div>
-                                <div class="search-Engine-options" id="option-2" title="Stop Watch">
-                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
-                                        <i class="">Bing</i>
-                                    </div>
-                                </div>
-                                <div class="search-Engine-options" id="option-2" title="Stop Watch">
-                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
-                                        <i class="">Duck Duck Go</i>
-                                    </div>
-                                </div>
-                                <div class="search-Engine-options" id="option-2" title="Stop Watch">
-                                    <div class="option" customize-theme="theme-div" customize-text="text-color-feild">
-                                        <i class="">Start Page</i>
-                                    </div>
-                                </div>
+                                    <i class="fas fa-search"></i>
+                                </button>
                             </div>
-
                         </div>
-                        <input type="text" class="searchTerm" placeholder="What are you looking for?"
-                            customize-theme="theme-div" customize-text="text-color-feild">
-                        <button type="submit" class="searchButton" customize-theme="theme-div"
-                            customize-text="text-color-feild">
-                            <i class="fas fa-search"></i>
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="wether-div">
-        </div>
-        <div class="search-and-bookmark">
-        </div>
-        <div class="todo-list-div">
-        </div>
-        <div class="site-statistic-div">
-        </div>
-        <div class="sittings-div">
-
-            <div class="button2 setting-button" customize-theme="theme-div" customize-text="text-color-feild">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Settings
+            <div class="middle-center-section">
+                <div class="todo-list-div">
+                </div>
             </div>
-            <div class="settings-modal-container" customize-theme="theme-div">
-                <div class="settings-modal">
-                    <div class="cross-settings-modal" customize-text="text-color-feild">
-                        <i class="fas fa-times" style="font-size: 20px;"></i>
-                    </div>
-                    <form action="" id="settings-modal-form">
-                        <div class="name-input-div">
-                            <label for="name" customize-text="text-color-feild">Name</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="bgcolor-input-div">
-                            <label for="bgColor" customize-text="text-color-feild">Background color</label>
-                            <input type="" id="bgColor">
-                        </div>
-                        <div class="textColor-input-div">
-                            <label for="textColor" customize-text="text-color-feild">Text color</label>
-                            <input type="" id="textColor">
-                        </div>
-                        <div class="theme-color-input">
-                            <label for="theme-color" customize-text="text-color-feild">Theme Color</label>
-                            <input type="text" id="theme-color">
-                        </div>
-                        <div class="profile-input-div">
-                            <label for="profile" customize-text="text-color-feild">Profile</label>
-                            <input type="file" id="profile">
-                        </div>
-                        <div class="Cover-photo-input-div">
-                            <label for="Cover-photo" customize-text="text-color-feild">Cover Photo</label>
-                            <input type="file" id="Cover-photo">
-                        </div>
-
-                        <div class="submit-div">
-                            <div class="button2 submit " customize-theme="theme-div" customize-text="text-color-feild">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Submit
-                            </div>
-                        </div>
-
-                    </form>
+            <div class="middle-bottom-section">
+                <div class="quote-div">
                 </div>
             </div>
 
+        </div>
+        <div class="right-section">
+            <div class="right-top-section">
+                <div class="wether-div">
+                </div>
+            </div>
+            <div class="right-middle-section">
+                <div class="site-statistic-div">
+                </div>
+            </div>
+            <div class="right-bottom-section">
+                <div class="block-list-div">
+                </div>
+            </div>
+        </div>
 
-        </div>
-        <div class="quote-div">
-        </div>
-        <div class="block-list-div">
-        </div>
     </main>
     <!-- ------------------- script ------------------------- -->
     <script src="../fontawesome/all.min.js"></script>

@@ -1,11 +1,16 @@
+.Search-different-engine-container{
+    height: auto;
+    position: relative;
+}
 .select-search-Engine {
-margin-top: -3px;
+margin-top: -1px;
 margin-right: -2px;
 }
 .select-search-Engine-container{
+    height: 0px;
 }
 .select-search-Engine-box {
-    padding: 12px 25px;
+    padding: 10px 25px;
     background-color: aliceblue;
     border-radius: 5px;
     position: relative;
@@ -23,47 +28,60 @@ margin-right: -2px;
 }
 
 .search-Engine-options {
+    position: relative;
     font-size: 13px;
-    border-radius: 50%;
     margin-top: 10px;
     visibility: hidden;
     opacity: 0;
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
-}
-
-.search-Engine-options .option {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
     background-color: goldenrod;
-    transition: all .4s ease-in-out;
-
 }
+  
 
-.search-Engine-options:hover .option {
-    background-color: rgba(218, 165, 32, 0.767);
 
-}
-
-.select-search-Engine-container:hover .search-Engine-options {
+.select-search-Engine-container:hover .search-Engine-options
+{
     opacity: 1;
+    top: 0 !important;
+    z-index: 1 !important;
     visibility: visible;
 }
-
-.select-search-Engine-box:hover .fa-plus {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+.select-search-Engine-container:hover {
+    height: auto;
 }
 
-.search-Engine-options#option-2 {
-    transition-delay: .1s;
+.search-Engine-options#search-Engine-1 {
+top: -45px;
+z-index: -1;
+transition-delay: .1s;
+-webkit-transition-delay: .1s;
 }
 
-.search-Engine-options#option-2 {
+.search-Engine-options#search-Engine-2 {
+    top: -93px;
+    z-index: -10;
     transition-delay: .2s;
+-webkit-transition-delay: .2s;
+
 }
 
-.search-Engine-options#option-3 {
+.search-Engine-options#search-Engine-3 {
+    top: -140px;
+    z-index: -10;
+    font-size: 11px;
+    padding: 9px 5px;
     transition-delay: .3s;
+-webkit-transition-delay: .3s;
+
+}
+.search-Engine-options#search-Engine-4 {
+    top: -183px;
+    z-index: -10;
+    transition-delay: .4s;
+-webkit-transition-delay: .4s;
+
 }

@@ -1,4 +1,6 @@
-
+.clock-select-box-container{
+    height: 0px;
+}
 .select-clock{
     padding: 30px 20px;
 }
@@ -41,7 +43,9 @@ transition: all .4s ease-in-out;
     opacity: 1;
     visibility: visible;
 }
-
+.clock-select-box-container:hover{
+    height: auto;
+}
 .clock-select-box:hover .fa-plus {
 transform: rotate(135deg);
 -webkit-transform: rotate(135deg);

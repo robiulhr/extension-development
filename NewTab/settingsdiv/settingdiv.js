@@ -8,7 +8,7 @@
     let profileInput = document.querySelector("#profile")
     let CoverphotoInput = document.querySelector("#Cover-photo")
     let themeColorInput = document.querySelector("#theme-color")
-    let submit = document.querySelector(".button2.submit")
+    let submit = document.querySelector(".submit-div .form-group .submit")
     // -----------------------
     let NameFeild = document.querySelector(".Name-feild")
     let Bgfeild = document.querySelector("body")
@@ -26,7 +26,7 @@
         CoverphotoInput.value = ""
     }
     let openModal = () => {
-        modalDiv.style.top = "-50vh"
+        modalDiv.style.top = "-80vh"
     }
     settingButton.addEventListener("click", () => {
         openModal()

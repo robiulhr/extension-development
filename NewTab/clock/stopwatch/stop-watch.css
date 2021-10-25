@@ -8,13 +8,14 @@ align-items: center;
 }
 .stop-watch h1{
     margin-bottom: 10px;
-    text-shadow: 0 0 20px rgb(10 75 130),
-    0 0 20px rgb(10 175 230 / 0%);
+    /* text-shadow: 0 0 20px rgb(10 75 130),
+    0 0 20px rgb(10 175 230 / 0%); */
     color: #daf6ff;
 }
 .stop-watch p{
-text-shadow: 0 0 20px rgb(48 147 180 / 86%),
-0 0 20px rgb(10 175 230 / 0%);
+/* text-shadow: 0 0 20px rgb(48 147 180 / 86%),
+0 0 20px rgb(10 175 230 / 0%); */
+font-size: 15px;
 color: #daf6ff;
 }
 .stop-watch-button{
@@ -28,6 +29,6 @@ color: #daf6ff;
     margin: 2px;
     color: #daf6ff;
 background-color: transparent;
- box-shadow: 0 0 20px rgb(76 144 166 / 44%),
- 0 0 20px rgb(10 175 230 / 0%);
+ /* box-shadow: 0 0 20px rgb(76 144 166 / 44%),
+ 0 0 20px rgb(10 175 230 / 0%); */
 }
