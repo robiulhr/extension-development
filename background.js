@@ -33,3 +33,14 @@ chrome.action.setBadgeBackgroundColor({ color: '#4688F1' });
 //     chrome.action.setTitle({ tabId: tab.id, title: "You are on tab:" + tab.id });
 //     console.log(tab);
 // });
+
+// function retrieved(results) {
+//     console.log(`There were: ${results.length} search engines retrieved.`);
+//     for (let searchEngine of results) {
+//         console.log(JSON.stringify(searchEngine.name));
+//     }
+// }
+
+// browser.search.get().then(retrieved);
+
+
