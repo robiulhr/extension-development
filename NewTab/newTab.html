@@ -8,6 +8,10 @@
     <!-- -----------------------------------------  css --------------------------------- -->
     <!-- ----------------------------------------- fontawesome ------------------------------------------- -->
     <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <!-- ------------------------------------ top sites div css ------------------------------------ -->
+    <link rel="stylesheet" href="./topsitesdiv/topsitesdiv.css">
+    <!-- ------------------------ bookmark section css  -------------------------------- -->
+    <link rel="stylesheet" href="./bookmarksection/bookmarksection.css">
     <!-- -------------------------------------------Search-different-engine option div ----------------------------------- -->
     <link rel="stylesheet" href="./Avatar/SearchDefferentEngine/selectSearchEngine.css">
 
@@ -97,7 +101,30 @@
                 </div>
             </div>
             <div class="left-middle-section">
-                <div class="search-and-bookmark">
+                <div class="bookmark-section">
+                    <div class="bookmark-upper">
+                        <div class="bookmark-title">
+                            <h2 customize-text="text-color-feild">Bookmark Here</h2>
+                        </div>
+                        <form action="" method="get">
+                            <div class="bookmark-adding">
+                                <div class="bookmark-add-input">
+                                    <input type="text" customize-theme="theme-div" id="bookmark-input"
+                                        customize-text="text-color-feild" placeholder="Enter your link">
+                                </div>
+                                <div class="bookmark-add-button">
+                                    <input type="submit" value="Add" id="bookmark-submit" customize-theme="theme-div"
+                                        customize-text="text-color-feild">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="bookmark-lower">
+                        <ul class="bookmark-list">
+
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="left-bottom-section">
@@ -197,40 +224,52 @@
                     </div>
                     <div class="Search-different-engine-container">
                         <div class="Search-different-engine">
-                            <div class="search ">
-                                <div class="select-search-Engine">
-                                    <div class="select-search-Engine-container">
-                                        <div class="select-search-Engine-box" customize-theme="theme-div"
-                                            customize-text="text-color-feild">
-                                            <i class="">Select</i>
+                            <form action="" method="get" id="SearchDifferentsearchEngineForm">
+
+                                <div class="search ">
+
+                                    <div class="select-search-Engine">
+                                        <div class="select-search-Engine-container">
+                                            <div class="select-search-Engine-box" customize-theme="theme-div"
+                                                customize-text="text-color-feild">
+                                                <i class="">Select</i>
+                                            </div>
+                                            <div class="search-Engine-options" id="search-Engine-1" title="Google"
+                                                customize-theme="theme-div" customize-text="text-color-feild">
+                                                <i class="">Google</i>
+                                            </div>
+                                            <div class="search-Engine-options" id="search-Engine-2" title="Bing"
+                                                customize-theme="theme-div" customize-text="text-color-feild">
+                                                <i class="">Bing</i>
+                                            </div>
+                                            <div class="search-Engine-options" id="search-Engine-3" title="Duck Duck Go"
+                                                customize-theme="theme-div" customize-text="text-color-feild">
+                                                <i class="">Duck Duck Go</i>
+                                            </div>
+                                            <div class="search-Engine-options" id="search-Engine-4"
+                                                customize-theme="theme-div" customize-text="text-color-feild"
+                                                title="Start Page">
+                                                <i class="">Start Page</i>
+                                            </div>
+                                            <div class="search-Engine-options" id="search-Engine-5"
+                                                customize-theme="theme-div" customize-text="text-color-feild"
+                                                title="Youtube">
+                                                <i class="">Youtube</i>
+                                            </div>
                                         </div>
-                                        <div class="search-Engine-options" id="search-Engine-1" title="Google"
-                                            customize-theme="theme-div" customize-text="text-color-feild">
-                                            <i class="">Google</i>
-                                        </div>
-                                        <div class="search-Engine-options" id="search-Engine-2" title="Bing"
-                                            customize-theme="theme-div" customize-text="text-color-feild">
-                                            <i class="">Bing</i>
-                                        </div>
-                                        <div class="search-Engine-options" id="search-Engine-3" title="Duck Duck Go"
-                                            customize-theme="theme-div" customize-text="text-color-feild">
-                                            <i class="">Duck Duck Go</i>
-                                        </div>
-                                        <div class="search-Engine-options" id="search-Engine-4"
-                                            customize-theme="theme-div" customize-text="text-color-feild"
-                                            title="Start Page">
-                                            <i class="">Start Page</i>
-                                        </div>
+
                                     </div>
 
+                                    <input type="text" class="searchTerm" id="differentsearchEngineinput"
+                                        placeholder="What are you looking for?" customize-theme="theme-div"
+                                        customize-text="text-color-feild">
+                                    <button type="submit" class="searchButton" id="differentsearchEngineSubmit"
+                                        customize-theme="theme-div" customize-text="text-color-feild">
+                                        <i class="fas fa-search"></i>
+                                    </button>
                                 </div>
-                                <input type="text" class="searchTerm" placeholder="What are you looking for?"
-                                    customize-theme="theme-div" customize-text="text-color-feild">
-                                <button type="submit" class="searchButton" customize-theme="theme-div"
-                                    customize-text="text-color-feild">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -247,7 +286,15 @@
         </div>
         <div class="right-section">
             <div class="right-top-section">
-                <div class="wether-div">
+                <div class="top-sites-div">
+                    <div class="top-sites-div-title">
+                        <h2 customize-text="text-color-feild">Most visited sites</h2>
+                    </div>
+                    <div class="top-sites-div-content">
+                        <ul class="top-sites-div-list">
+
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="right-middle-section">
@@ -259,10 +306,21 @@
                 </div>
             </div>
         </div>
-
+        <!-- ----------------------- raf experiment----------------------- -->
+        <!-- <div>
+            <button id="experiment">Click</button>
+        </div>
+        <script src="../experiment.js"></script> -->
     </main>
     <!-- ------------------- script ------------------------- -->
     <script src="../fontawesome/all.min.js"></script>
+    <!-- ------------------------ setting  and photo Upload script  -------------------------------- -->
+    <script src="./settingsdiv/photoUpload.js"></script>
+    <script src="./settingsdiv/settingdiv.js"></script>
+    <!-- ------------------------------------ top sites div css ------------------------------------ -->
+    <script src="./topsitesdiv/topsitesdiv.js"></script>
+    <!-- ------------------------bookmark section script  -------------------------------- -->
+    <script src="./bookmarksection/bookmarksection.js"></script>
     <!-- ------------------------Search-different-engine option script  -------------------------------- -->
     <script src="./Avatar/SearchDefferentEngine/selectSearchEngine.js"></script>
     <!-- ------------------------Search-different-engine script  -------------------------------- -->
@@ -270,9 +328,6 @@
     <!-- ------------------------Avatar script  -------------------------------- -->
 
     <script src="./Avatar/Avatar.js"></script>
-    <!-- ------------------------ setting  and photo Upload script  -------------------------------- -->
-    <script src="./settingsdiv/photoUpload.js"></script>
-    <script src="./settingsdiv/settingdiv.js"></script>
     <!-- ------------------------ Weather app script  -------------------------------- -->
     <script src="./weatherDiv/weatherDiv.js"></script>
     <!-- ------------------------ avatar script  -------------------------------- -->

@@ -26,7 +26,7 @@
         CoverphotoInput.value = ""
     }
     let openModal = () => {
-        modalDiv.style.top = "-80vh"
+        modalDiv.style.top = "-72vh"
     }
     settingButton.addEventListener("click", () => {
         openModal()

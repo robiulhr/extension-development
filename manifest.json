@@ -4,17 +4,19 @@
   "version": "1.0",
   "manifest_version": 3,
     "background": {
-    "service_worker": "background.js"
+    "service_worker": 
+       "background.js"   
+      
   },
-  "permissions": ["storage","tabs","activeTab", "scripting","search"],
+  "permissions": ["storage","tabs","activeTab", "scripting","search","contextMenus","topSites"],
    "icons": {
     "16": "image/logo_16x16.png",
     "32": "image/logo_32x32.png",
     "48": "image/logo_48x48.png",
     "128": "image/logo_128x128.png"
   },
+  
    "action": {
-    "default_popup": "Popup/popup.html",
       "default_title": "All in One (Less Worry)",
      "default_icon": {
       "16": "image/logo_16x16.png",
@@ -26,20 +28,5 @@
   },
   "chrome_url_overrides" : {
     "newtab": "./NewTab/newTab.html"
-  },
-"options_page": "options.html",
- "chrome_settings_overrides": {
-    "homepage": "https://www.homepage.com",
-    "search_provider": {
-        "name": "Google",
-        "keyword": "https://www.google.com",
-        "search_url": "https://www.google.com/search?q={searchTerms}",
-        "favicon_url": "https://www.google.com/favicon.ico",
-        "suggest_url": "https://www.foo.__MSG_url_domain__/suggest?q={searchTerms}",
-        "instant_url": "https://www.foo.__MSG_url_domain__/instant?q={searchTerms}",
-        "image_url": "https://www.bing.com/images?q=?q={searchTerms}",
-        "encoding": "UTF-8",
-        "is_default": true
-    }
-}
+  }
    }

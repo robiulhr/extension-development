@@ -1,46 +1,25 @@
-console.log("Hello World");
 
-// let color = '#3aa757';
 
-chrome.runtime.onInstalled.addListener((reason) => {
-    // chrome.storage.sync.set({ color });
-    // console.log('Default background color set to %cgreen', `color: ${color}`);
-
-    // ----------------------------------------------
-    console.log(chrome.runtime.OnInstalledReason.INSTALL);
-    console.log(reason);
-    if (reason.reason === chrome.runtime.OnInstalledReason.INSTALL) {
-        console.log("true");
-        chrome.tabs.create({
-            url: 'AfterInstall/AllinOne.html'
-        });
+// --------------------------------- CREATING context Menus and making its functionality
+chrome.contextMenus.create({
+    id: "robiulhasan1",
+    title: "Add to bookmark",
+    contexts: ["all"]
+}, () => {
+    if (chrome.runtime.lastError) {
+        console.error(chrome.runtime.lastError);
+    } else {
+        console.log("no error occoured with context menu");
     }
-    // ---------------------------------------------------------------------------------------------
-    // async function getCurrentTab() {
-    //     let queryOptions = { active: true, currentWindow: true };
-    //     let [tab] = await chrome.tabs.query(queryOptions);
-    //     console.log(tab);
-    //     return tab;
-    // }
-    // getCurrentTab()
 });
-
-// --------------------------------------------------------------------------------
-chrome.action.setBadgeText({ text: 'ON' });
-chrome.action.setBadgeBackgroundColor({ color: '#4688F1' });
-// ---------------------------------------------------------------------------------------
-// chrome.action.onClicked.addListener(function (tab) {
-//     chrome.action.setTitle({ tabId: tab.id, title: "You are on tab:" + tab.id });
-//     console.log(tab);
-// });
-
-// function retrieved(results) {
-//     console.log(`There were: ${results.length} search engines retrieved.`);
-//     for (let searchEngine of results) {
-//         console.log(JSON.stringify(searchEngine.name));
-//     }
-// }
-
-// browser.search.get().then(retrieved);
-
+chrome.contextMenus.onClicked.addListener(function (info, tab) {
+    chrome.storage.sync.get(["name"], function (result) {
+        let AlltabInfo = result.name ? JSON.parse(result.name) : [];
+        AlltabInfo.push({ favIconUrl: tab.favIconUrl, url: tab.url, title: tab.title });
+        let stringifyAlltabinfo = JSON.stringify(AlltabInfo)
+        chrome.storage.sync.set({ name: stringifyAlltabinfo }, function () {
+            // console.log('Value is set to ' + stringifyAlltabinfo);
+        })
+    })
+});
 

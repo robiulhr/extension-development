@@ -1,8 +1,15 @@
+.all-clock-div {
+    display: flex;
+    justify-content: space-around;
+    height: max-content;
+    /* margin: 20px; */
+}
 .clock-select-box-container{
     height: 0px;
 }
 .select-clock{
     padding: 30px 20px;
+    z-index: 100000;
 }
 .clock-select-box{
     padding: 12px 15px;
